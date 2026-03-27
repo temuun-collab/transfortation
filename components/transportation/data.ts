@@ -59,7 +59,7 @@ export const topics: Topic[] = [
     videoTitle: "Wheeled Cart Development",
     description:
       "Early bicycle: Velocipede Invented in early 19th century No pedals Moved by pushing feet on the ground Made of wood and simple materials Slow and uncomfortable First step in bicycle development",
-    embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    embedUrl: "https://www.youtube.com/embed/9geT2x3CCuw",
     emoji: "🛞",
     color: "#f59e0b",
     bg: "#fef9c3",
@@ -104,7 +104,7 @@ export const topics: Topic[] = [
     videoTitle: "Railroad Expansion",
     description:
       "The modern railroad began in Britain during the Industrial Revolution. In 1825, the world’s first public steam railway, the Stockton and Darlington Railway, opened in England.",
-    embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    embedUrl: "https://www.youtube.com/embed/XYJStb0RRkE",
     emoji: "🚂",
     color: "#ef4444",
     bg: "#fee2e2",
