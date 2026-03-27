@@ -290,19 +290,6 @@ export function TopicModal({
                     {topic.emoji}
                   </div>
                   <div>
-                    <div
-                      style={{
-                        fontFamily: "'DM Sans', sans-serif",
-                        fontSize: 12,
-                        fontWeight: 600,
-                        letterSpacing: "0.08em",
-                        textTransform: "uppercase",
-                        color: topic.color,
-                        marginBottom: 4,
-                      }}
-                    >
-                      {topic.era} Era · {topic.year}
-                    </div>
                     <h3
                       style={{
                         fontFamily: "'Playfair Display', serif",

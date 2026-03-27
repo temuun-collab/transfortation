@@ -114,8 +114,9 @@ export function TimelineSection({
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(6, minmax(0, 1fr))",
+            gridTemplateColumns: `repeat(${topics.length}, minmax(0, 1fr))`,
             gap: 16,
+            alignItems: "stretch",
           }}
         >
           {topics.map((topic, index) => (
@@ -135,34 +136,44 @@ export function TimelineSection({
                 <div className="card-accent" style={{ background: topic.color }} />
 
                 <div
-                  className="emoji-box"
-                  style={{ background: `${topic.bg}22`, borderColor: `${topic.color}30` }}
-                >
-                  {topic.emoji}
-                </div>
-
-                <h3
                   style={{
-                    fontFamily: "'Playfair Display', serif",
-                    fontSize: 20,
-                    fontWeight: 700,
-                    marginBottom: 6,
-                    lineHeight: 1.2,
+                    display: "flex",
+                    alignItems: "center",
+                    gap: 12,
+                    marginBottom: 12,
                   }}
                 >
-                  {topic.title}
-                </h3>
+                  <div
+                    className="emoji-box"
+                    style={{ background: `${topic.bg}22`, borderColor: `${topic.color}30` }}
+                  >
+                    {topic.emoji}
+                  </div>
 
-                <div
-                  style={{
-                    fontFamily: "'DM Sans', sans-serif",
-                    fontSize: 22,
-                    fontWeight: 700,
-                    color: topic.color,
-                    marginBottom: 10,
-                  }}
-                >
-                  {topic.year}
+                  <div>
+                    <h3
+                      style={{
+                        fontFamily: "'Playfair Display', serif",
+                        fontSize: 16,
+                        fontWeight: 700,
+                        marginBottom: 4,
+                        lineHeight: 1.2,
+                      }}
+                    >
+                      {topic.title}
+                    </h3>
+
+                    <div
+                      style={{
+                        fontFamily: "'DM Sans', sans-serif",
+                        fontSize: 16,
+                        fontWeight: 700,
+                        color: topic.color,
+                      }}
+                    >
+                      {topic.year}
+                    </div>
+                  </div>
                 </div>
 
                 <p

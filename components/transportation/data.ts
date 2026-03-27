@@ -159,7 +159,7 @@ export const topics: Topic[] = [
     videoTitle: "The First Underground",
     description:
       "The London Underground was the world’s first railway system. It started in the 19th century and today is an important part of London’s transport. Back then, the city had problems like: Crowded streets, Too many horse carriages, Slow travel across town. To fix this, engineers decided to build a train line under the ground.",
-    embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    embedUrl: "https://www.youtube.com/embed/XgpnUdc0n9c",
     emoji: "🚇",
     color: "#8b5cf6",
     bg: "#ede9fe",
@@ -214,7 +214,7 @@ export const topics: Topic[] = [
     videoTitle: "Automobile Era",
     description:
       "Britain's first motor car appeared in 1895, and by 1897 production had begun. The 'Red Flag Act' once required a man to walk in front of cars waving a red flag — it was repealed in 1896.",
-    embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    embedUrl: "https://www.youtube.com/embed/2JCGx6xGaQQ",
     emoji: "🚗",
     color: "#10b981",
     bg: "#d1fae5",
@@ -264,9 +264,54 @@ export const topics: Topic[] = [
     videoTitle: "Airplane Innovation",
     description:
       "The first powered flight in Britain took place in 1908. By WWI, Britain had over 2,000 military aircraft. Heathrow Airport, opened in 1946, would become the world's busiest international airport.",
-    embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    embedUrl: "https://www.youtube.com/embed/OFJbGjKl5Xg",
     emoji: "✈️",
     color: "#6366f1",
+    bg: "#e0e7ff",
+    facts: [
+      "First flight lasted 27 seconds",
+      "WWII pilots flew at 350+ mph",
+      "Concorde reached Mach 2",
+    ],
+    quiz: [
+      {
+        question: "When did the first powered flight in Britain take place?",
+        options: ["1908", "1808", "1939", "1969"],
+        correctIndex: 0,
+      },
+      {
+        question: "By WWI, Britain had over how many military aircraft?",
+        options: ["2,000", "20", "200", "20,000"],
+        correctIndex: 0,
+      },
+      {
+        question: "What airport opened in 1946?",
+        options: ["Heathrow Airport", "Gatwick Airport", "Manchester Airport", "Luton Airport"],
+        correctIndex: 0,
+      },
+      {
+        question: "How long did the first flight last?",
+        options: ["27 seconds", "27 minutes", "2 hours", "5 seconds"],
+        correctIndex: 0,
+      },
+      {
+        question: "What speed milestone is associated with Concorde?",
+        options: ["Mach 2", "10 mph", "Mach 5", "500 mph exactly"],
+        correctIndex: 0,
+      },
+    ],
+  },
+  {
+    id: "nowadays",
+    title: "Nowadays",
+    year: "2026",
+    era: "Modern",
+    videoTitle: "Nowadays Transportation",
+    description:
+      "The first powered flight in Britain took place in 1908. By WWI, Britain had over 2,000 military aircraft. Heathrow Airport, opened in 1946, would become the world's busiest international airport.",
+    embedUrl: "https://www.youtube.com/embed/FvuyHh4ua9w",
+    emoji: "🚀",
+    color: "#63d7f1ff",
     bg: "#e0e7ff",
     facts: [
       "First flight lasted 27 seconds",

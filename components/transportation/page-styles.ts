@@ -41,6 +41,9 @@ export const pageStyles = `
     transition: all 0.25s ease;
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
 
   .card:hover {
@@ -67,6 +70,7 @@ export const pageStyles = `
     display: flex;
     flex-direction: column;
     gap: 10px;
+    height: 100%;
   }
 
   .detail-card {
@@ -92,15 +96,15 @@ export const pageStyles = `
   }
 
   .emoji-box {
-    width: 52px;
-    height: 52px;
-    border-radius: 14px;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 26px;
-    margin-bottom: 14px;
+    font-size: 22px;
     border: 1px solid rgba(255,255,255,0.08);
+    flex-shrink: 0;
   }
 
   .play-btn {
