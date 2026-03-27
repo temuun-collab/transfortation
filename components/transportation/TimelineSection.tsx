@@ -151,7 +151,7 @@ export function TimelineSection({
                     <h3
                       style={{
                         fontFamily: "'Playfair Display', serif",
-                        fontSize: 16,
+                        fontSize: 14,
                         fontWeight: 700,
                         marginBottom: 4,
                         lineHeight: 1.2,
@@ -163,7 +163,7 @@ export function TimelineSection({
                     <div
                       style={{
                         fontFamily: "'DM Sans', sans-serif",
-                        fontSize: 16,
+                        fontSize: 14,
                         fontWeight: 700,
                         color: topic.color,
                       }}
