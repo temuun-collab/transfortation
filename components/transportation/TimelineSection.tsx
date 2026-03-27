@@ -1,27 +1,24 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { ChevronRight, Play } from "lucide-react";
 
 import { topics } from "./data";
 import { TopicModal } from "./TopicModal";
-import type { ActiveTab } from "./types";
 
 type TimelineSectionProps = {
-  activeTab: ActiveTab;
   onCardHover: (id: string | null) => void;
   onSelectTopic: (id: string) => void;
   onCloseModal: () => void;
-  onTabChange: (tab: ActiveTab) => void;
   selectedId: string | null;
 };
 
 export function TimelineSection({
-  activeTab,
   onCardHover,
   onSelectTopic,
   onCloseModal,
-  onTabChange,
   selectedId,
 }: TimelineSectionProps) {
+  const [expandedSummaryId, setExpandedSummaryId] = useState<string | null>(null);
   const selectedTopic = topics.find((topic) => topic.id === selectedId) ?? null;
 
   return (
@@ -116,13 +113,13 @@ export function TimelineSection({
             display: "grid",
             gridTemplateColumns: `repeat(${topics.length}, minmax(0, 1fr))`,
             gap: 16,
-            alignItems: "stretch",
+            alignItems: "start",
           }}
         >
           {topics.map((topic, index) => (
             <motion.div
               key={topic.id}
-              initial={{ opacity: 0, y: 24 }}
+              initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.07, duration: 0.4 }}
               className="card-stack"
@@ -139,18 +136,18 @@ export function TimelineSection({
                   style={{
                     display: "flex",
                     alignItems: "center",
-                    gap: 12,
-                    marginBottom: 12,
+                    gap: 10,
+                    marginBottom: 10,
                   }}
                 >
                   <div
                     className="emoji-box"
-                    style={{ background: `${topic.bg}22`, borderColor: `${topic.color}30` }}
+                    style={{ background: `${topic.bg}20`, borderColor: `${topic.color}30`, flexShrink: 0 }}
                   >
                     {topic.emoji}
                   </div>
 
-                  <div>
+                  <div style={{ minWidth: 0 }}>
                     <h3
                       style={{
                         fontFamily: "'Playfair Display', serif",
@@ -176,17 +173,6 @@ export function TimelineSection({
                   </div>
                 </div>
 
-                <p
-                  style={{
-                    fontFamily: "'DM Sans', sans-serif",
-                    fontSize: 13,
-                    color: "rgba(255,255,255,0.45)",
-                    lineHeight: 1.6,
-                  }}
-                >
-                  {topic.description.slice(0, 80)}…
-                </p>
-
                 <button className="play-btn">
                   <Play size={13} fill="white" />
                   Watch Video
@@ -198,7 +184,17 @@ export function TimelineSection({
                 className="detail-card"
                 style={{
                   borderColor: `${topic.color}25`,
-                  boxShadow: `0 12px 30px ${topic.color}10`,
+                  boxShadow:
+                    expandedSummaryId === topic.id
+                      ? `0 24px 50px ${topic.color}18`
+                      : `0 12px 30px ${topic.color}10`,
+                  minHeight: 290,
+                  maxHeight: expandedSummaryId === topic.id ? 560 : 290,
+                  overflow: "hidden",
+                  transition: "max-height 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease",
+                  transform: expandedSummaryId === topic.id ? "translateY(6px)" : "none",
+                  display: "flex",
+                  flexDirection: "column",
                 }}
               >
                 <p
@@ -220,10 +216,41 @@ export function TimelineSection({
                     fontSize: 12,
                     lineHeight: 1.6,
                     color: "rgba(255,255,255,0.62)",
+                    flex: 1,
+                    display:
+                      expandedSummaryId === topic.id ? "block" : "-webkit-box",
+                    WebkitLineClamp:
+                      expandedSummaryId === topic.id ? "unset" : 9,
+                    WebkitBoxOrient: "vertical",
+                    overflow: "hidden",
                   }}
                 >
-                  {topic.description.slice(0, 92)}…
+                  {topic.summary}
                 </p>
+                {topic.summary.length > 220 && (
+                  <button
+                    type="button"
+                    onClick={() =>
+                      setExpandedSummaryId((current) =>
+                        current === topic.id ? null : topic.id
+                      )
+                    }
+                    style={{
+                      marginTop: 12,
+                      alignSelf: "flex-start",
+                      border: "none",
+                      background: "transparent",
+                      color: topic.color,
+                      fontFamily: "'DM Sans', sans-serif",
+                      fontSize: 12,
+                      fontWeight: 700,
+                      cursor: "pointer",
+                      padding: 0,
+                    }}
+                  >
+                    {expandedSummaryId === topic.id ? "See less" : "See more"}
+                  </button>
+                )}
               </div>
             </motion.div>
           ))}
@@ -231,9 +258,7 @@ export function TimelineSection({
       </div>
 
       <TopicModal
-        activeTab={activeTab}
         onClose={onCloseModal}
-        onTabChange={onTabChange}
         topic={selectedTopic}
       />
     </motion.div>

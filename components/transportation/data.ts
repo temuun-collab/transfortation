@@ -8,7 +8,9 @@ export const topics: Topic[] = [
     era: "Ancient",
     videoTitle: "Maritime Transport",
     description:
-      "The history of British ships developed from simple wooden boats to powerful sailing ships, steamships, and modern naval vessels. This development helped Britain become one of the world’s greatest maritime nations.",
+      "Sea transport played a key role in Britain’s global trade and empire. Large ships were used to carry goods between continents. Navigation technology improved sea travel over time. Today, cargo ships transport most of the world’s goods.",
+    summary:
+      "This video shows the development of maritime transport from early boats to modern ships. It explains how ancient people used simple wooden boats for fishing and travel across rivers and seas. It also shows how ships became larger and more powerful during the Industrial Revolution with steam engines. Today, modern ships use advanced technology and are important for global trade and long-distance travel.",
     embedUrl: "https://www.youtube.com/embed/vH4qQbgLYtU",
     emoji: "⛵",
     color: "#0ea5e9",
@@ -20,33 +22,43 @@ export const topics: Topic[] = [
     ],
     quiz: [
       {
-        question: "What was one of the earliest forms of British water transport?",
-        options: ["Dugout canoes", "Steam ferries", "Jet boats", "Submarines"],
-        correctIndex: 0,
+        question: "What were early British boats made of?",
+        options: ["Plastic", "Wood", "Iron", "Stone"],
+        correctIndex: 1,
       },
       {
-        question: "Early boats were mainly used for fishing, trade, and what else?",
-        options: ["Migration", "Racing", "Tourism", "Mining"],
-        correctIndex: 0,
+        question: "When did Britain become a strong sea power?",
+        options: ["10th–12th centuries", "13th–15th centuries", "16th–18th centuries", "19th–20th centuries"],
+        correctIndex: 2,
       },
       {
-        question: "What helped Britain become a major maritime nation?",
+        question: "What types of ships does Britain use today?",
         options: [
-          "Development of ships over time",
-          "Air travel expansion",
-          "Railway tunnels",
-          "Motorway building",
+          "Only fishing boats",
+          "Wooden sailing ships",
+          "Naval ships, aircraft carriers, and large cargo ships",
+          "Small river boats only",
         ],
-        correctIndex: 0,
+        correctIndex: 2,
       },
       {
-        question: "Which material was sometimes used over wooden frames?",
-        options: ["Animal skins", "Steel plates", "Plastic sheets", "Glass"],
-        correctIndex: 0,
+        question: "Why were ships important for Britain?",
+        options: [
+          "Britain is a desert country",
+          "Britain is an island nation",
+          "Britain has no rivers",
+          "Britain has no roads"
+        ],
+        correctIndex: 1,
       },
       {
-        question: "How did early sailors sometimes navigate?",
-        options: ["By stars", "By radar", "By GPS", "By radio"],
+        question: "What material started to be used in shipbuilding in the 19th century?",
+        options: [
+          "Iron",
+          "Paper",
+          "Rubber",
+          "Clay"
+        ],
         correctIndex: 0,
       },
     ],
@@ -58,7 +70,9 @@ export const topics: Topic[] = [
     era: "Industrial",
     videoTitle: "Wheeled Cart Development",
     description:
-      "Early bicycle: Velocipede Invented in early 19th century No pedals Moved by pushing feet on the ground Made of wood and simple materials Slow and uncomfortable First step in bicycle development",
+      "Wheeled carts were one of the earliest transport inventions in human history. They were mainly used in agriculture and trade. Animals like horses and oxen were used to pull them. This invention helped people move goods more easily over long distances.",
+    summary:
+      "This video shows the development of wheeled carts from ancient times to more advanced transport tools. It explains how early carts were made from wood and pulled by animals such as horses for carrying goods and people. It also shows how the invention of the wheel improved transportation and trade. Today, wheeled carts are still used in some areas, showing the importance of early transportation inventions.",
     embedUrl: "https://www.youtube.com/embed/9geT2x3CCuw",
     emoji: "🛞",
     color: "#f59e0b",
@@ -70,29 +84,54 @@ export const topics: Topic[] = [
     ],
     quiz: [
       {
-        question: "What powered most wheeled carts in 1817 Britain?",
-        options: ["Horses", "Electric motors", "Steam engines", "Diesel engines"],
+        question: "What was the name of the first bicycle?",
+        options: [
+          "Safety Bicycle",
+          "Velocipede",
+          "Mountain Bike",
+          "City Bike"
+        ],
+        correctIndex: 1,
+      },
+      {
+        question: "What was the main feature of the Penny-Farthing bicycle?",
+        options: [
+          "Two equal-sized wheels",
+          "A large back wheel",
+          "A large front wheel",
+          "An electric motor"
+        ],
+        correctIndex: 2,
+      },
+      {
+        question: "What was special about the Safety Bicycle?",
+        options: [
+          "It had a large front wheel",
+          "It had equal wheels and a chain drive",
+          "It used an electric motor",
+          "It had no pedals"
+        ],
+        correctIndex: 1,
+      },
+      {
+        question: "What types of bicycles became popular in the 20th century for sports?",
+        options: [
+          "BMX and Mountain Bikes",
+          "Velocipede",
+          "Penny-Farthing",
+          "Safety Bicycle"
+        ],
         correctIndex: 0,
       },
       {
-        question: "The draisine is best described as an early what?",
-        options: ["Bicycle-like vehicle", "Train carriage", "Taxi", "Tram"],
-        correctIndex: 0,
-      },
-      {
-        question: "What was a common problem with roads at that time?",
-        options: ["They were muddy", "They were frozen year-round", "They were underwater", "They were made of glass"],
-        correctIndex: 0,
-      },
-      {
-        question: "Horse-drawn transport was important mainly for what?",
-        options: ["Road travel", "Air travel", "Sea navigation", "Underground travel"],
-        correctIndex: 0,
-      },
-      {
-        question: "How many passengers could many coaches carry?",
-        options: ["6–8", "20–30", "50–60", "100+"],
-        correctIndex: 0,
+        question: "Which is an example of modern bicycle development?",
+        options: [
+          "High Wheel Bike",
+          "Racing Bike",
+          "Bike Sharing and E-Bikes",
+          "Velocipede"
+        ],
+        correctIndex: 2,
       },
     ],
   },
@@ -103,7 +142,9 @@ export const topics: Topic[] = [
     era: "Industrial",
     videoTitle: "Railroad Expansion",
     description:
-      "The modern railroad began in Britain during the Industrial Revolution. In 1825, the world’s first public steam railway, the Stockton and Darlington Railway, opened in England.",
+      "Railways helped transport heavy goods during the Industrial Revolution. Steam engines were later replaced by diesel and electric trains. High-speed trains made long-distance travel faster and more comfortable. Today, rail systems are important for both urban and national transport.",
+    summary:
+      "This video shows the development of the railroad from early wagonways to modern train systems. It explains how the first railways were built in the 19th century using steam locomotives for transporting goods and passengers. It also shows how trains became faster and more efficient with the introduction of electric and high-speed rail. Today, railroads are an important part of transportation, helping millions of people travel quickly and safely.",
     embedUrl: "https://www.youtube.com/embed/XYJStb0RRkE",
     emoji: "🚂",
     color: "#ef4444",
@@ -115,38 +156,53 @@ export const topics: Topic[] = [
     ],
     quiz: [
       {
-        question: "Which railway opened in 1825?",
+        question: "Who built the first successful steam locomotive used on railroads?",
         options: [
-          "Stockton and Darlington Railway",
+          "Isambard Kingdom Brunel",
+          "George Stephenson",
+          "James Watt",
+          "Thomas Newcomen"
+        ],
+        correctIndex: 1,
+      },
+      {
+        question: "Which railway opened in 1825 as the first public steam railway?",
+        options: [
+          "Great Western Railway",
           "London Underground",
-          "Great Western Highway",
-          "Heathrow Express",
+          "Stockton and Darlington Railway",
+          "Liverpool Street Railway"
         ],
-        correctIndex: 0,
+        correctIndex: 2,
       },
       {
-        question: "Why was the 1825 railway important?",
+        question: "Which locomotive won the Rainhill Trials in 1829?",
         options: [
-          "It was the first public steam railway",
-          "It was the first airport rail link",
-          "It crossed the English Channel",
-          "It used electric trains first",
+          "Mallard",
+          "Flying Scotsman",
+          "Locomotion No. 1",
+          "Stephenson’s Rocket"
         ],
-        correctIndex: 0,
+        correctIndex: 3,
       },
       {
-        question: "What was an early top train speed in 1825?",
-        options: ["25 mph", "5 mph", "80 mph", "150 mph"],
-        correctIndex: 0,
+        question: "What was the main purpose of early railways in the UK?",
+        options: [
+          "Tourism",
+          "Air travel",
+          "Moving coal and goods",
+          "Personal cars"
+        ],
+        correctIndex: 2,
       },
       {
-        question: "Railways connected what over time?",
-        options: ["Major British cities", "Only villages", "Only ports", "Only farms"],
-        correctIndex: 0,
-      },
-      {
-        question: "Railways transformed commerce and what else?",
-        options: ["Daily life", "Ocean currents", "Castle building", "Weather forecasting"],
+        question: "Which railway was the first to offer regular passenger service between cities?",
+        options: [
+          "Liverpool and Manchester Railway",
+          "Great Northern Railway",
+          "East Coast Main Line",
+          "Crossrail"
+        ],
         correctIndex: 0,
       },
     ],
@@ -158,7 +214,9 @@ export const topics: Topic[] = [
     era: "Victorian",
     videoTitle: "The First Underground",
     description:
-      "The London Underground was the world’s first railway system. It started in the 19th century and today is an important part of London’s transport. Back then, the city had problems like: Crowded streets, Too many horse carriages, Slow travel across town. To fix this, engineers decided to build a train line under the ground.",
+      "The underground system was built to reduce traffic in crowded cities. It became a fast way to travel without using roads. Different lines connect many parts of the city. Today, it is one of the most efficient urban transport systems.",
+    summary:
+      "This video shows the development of the London Underground from its early beginnings to the modern system. It explains how the first underground railway opened in 1863 using steam trains, later changing to electric trains. It also shows how the network expanded across London and became one of the busiest transport systems in the world. Today, it includes modern trains, advanced technology, and many lines that help millions of people travel every day.",
     embedUrl: "https://www.youtube.com/embed/XgpnUdc0n9c",
     emoji: "🚇",
     color: "#8b5cf6",
@@ -170,39 +228,44 @@ export const topics: Topic[] = [
     ],
     quiz: [
       {
-        question: "What opened in London in 1863?",
+        question: "Why is the London Underground called “the Tube”?",
         options: [
-          "The Metropolitan Railway",
-          "Heathrow Airport",
-          "The Channel Tunnel",
-          "The first motorway",
+          "Because it is very long",
+          "Because trains are fast",
+          "Because the tunnels are round shape",
+          "Because it is underground"
         ],
-        correctIndex: 0,
+        correctIndex: 2,
       },
       {
-        question: "Why is the Metropolitan Railway famous?",
+        question: "What was the first Underground line called?",
         options: [
-          "It was the world's first underground passenger railway",
-          "It was the first electric car factory",
-          "It was the first airport terminal",
-          "It was the first ship canal",
+          "Central Line",
+          "Metropolitan Line",
+          "Northern Line",
+          "Jubilee Line"
         ],
-        correctIndex: 0,
+        correctIndex: 1,
       },
       {
-        question: "How were early underground carriages lit?",
-        options: ["Gas lamps", "LED strips", "Candles only", "Solar panels"],
-        correctIndex: 0,
+        question: "What type of trains were first used in the Underground?",
+        options: [
+          "Electric trains",
+          "Diesel trains",
+          "Steam trains",
+          "Bullet trains"
+        ],
+        correctIndex: 2,
       },
       {
-        question: "What type of engines were used in the tunnels at first?",
-        options: ["Steam engines", "Jet engines", "Electric motors", "Horse power only"],
-        correctIndex: 0,
-      },
-      {
-        question: "About how many people ride it daily now?",
-        options: ["5 million", "50 thousand", "500", "25 million"],
-        correctIndex: 0,
+        question: "What replaced steam trains later?",
+        options: [
+          "Gas trains",
+          "Electric trains",
+          "Solar trains",
+          "Horse trains"
+        ],
+        correctIndex: 1,
       },
     ],
   },
@@ -213,7 +276,9 @@ export const topics: Topic[] = [
     era: "Modern",
     videoTitle: "Automobile Era",
     description:
-      "Britain's first motor car appeared in 1895, and by 1897 production had begun. The 'Red Flag Act' once required a man to walk in front of cars waving a red flag — it was repealed in 1896.",
+      "Cars became popular in the 20th century and changed daily life and cities. Early cars used petrol engines, but today many use electric power. Roads and highways were built to support growing traffic. Now, smart technology and self-driving systems are being developed.",
+    summary:
+      "This video shows the development of the automobile from its early invention to modern cars. It explains how the first motor vehicles were created in the late 19th century, starting with simple engines and basic designs. It also shows how cars became faster, safer, and more comfortable over time. Today, automobiles include electric vehicles, advanced technology, and modern features that help people travel easily every day.",
     embedUrl: "https://www.youtube.com/embed/2JCGx6xGaQQ",
     emoji: "🚗",
     color: "#10b981",
@@ -225,34 +290,54 @@ export const topics: Topic[] = [
     ],
     quiz: [
       {
-        question: "When did production of British motor cars begin?",
-        options: ["1897", "1750", "1914", "1945"],
-        correctIndex: 0,
-      },
-      {
-        question: "What law once affected early cars in Britain?",
-        options: ["Red Flag Act", "Railway Act", "Harbor Act", "Aviation Code"],
-        correctIndex: 0,
-      },
-      {
-        question: "What did the Red Flag Act require?",
+        question: "Which of the following cars was produced first?",
         options: [
-          "A person walking in front with a red flag",
-          "Cars to travel underground",
-          "Drivers to wear uniforms",
-          "Only two-wheeled cars",
+          "Rolls-Royce Silver Ghost",
+          "Mini",
+          "Daimler Motor Carriage",
+          "McLaren F1"
         ],
-        correctIndex: 0,
+        correctIndex: 2,
       },
       {
-        question: "What was an early speed limit for cars?",
-        options: ["14 mph", "60 mph", "100 mph", "5 mph in all cases"],
-        correctIndex: 0,
+        question: "Which car was produced in 1907?",
+        options: [
+          "Mini",
+          "Rolls-Royce Silver Ghost",
+          "Jaguar I-PACE",
+          "McLaren F1"
+        ],
+        correctIndex: 1,
       },
       {
-        question: "Who mostly owned early cars at first?",
-        options: ["The wealthy", "Schoolchildren", "Farm animals", "Everyone equally"],
-        correctIndex: 0,
+        question: "Which of the following is an electric car?",
+        options: [
+          "Daimler Motor Carriage",
+          "Rolls-Royce Phantom",
+          "Jaguar I-PACE",
+          "Mini"
+        ],
+        correctIndex: 2,
+      },
+      {
+        question: "Which car was produced most recently?",
+        options: [
+          "Rolls-Royce Phantom",
+          "McLaren F1",
+          "Jaguar I-PACE",
+          "Mini"
+        ],
+        correctIndex: 2,
+      },
+      {
+        question: "Which car was known for being the world's fastest production car at the time of its release?",
+        options: [
+          "Rolls-Royce Silver Ghost",
+          "Mini",
+          "McLaren F1",
+          "Jaguar I-PACE"
+        ],
+        correctIndex: 2,
       },
     ],
   },
@@ -263,7 +348,9 @@ export const topics: Topic[] = [
     era: "Modern",
     videoTitle: "Airplane Innovation",
     description:
-      "The first powered flight in Britain took place in 1908. By WWI, Britain had over 2,000 military aircraft. Heathrow Airport, opened in 1946, would become the world's busiest international airport.",
+      "Airplanes made international travel much faster than before. Airlines began offering regular passenger services in the 20th century. Airports became important transport hubs. Today, air travel connects countries and supports global tourism.",
+    summary:
+      "This video shows the development of airplanes from the first flights to modern aviation. It explains how the first successful flight happened in the early 20th century, followed by the introduction of commercial flights. It also shows how airplanes became faster and more advanced, including the Concorde and modern jets. Today, airplanes use advanced technology and connect people around the world quickly and efficiently.",
     embedUrl: "https://www.youtube.com/embed/OFJbGjKl5Xg",
     emoji: "✈️",
     color: "#6366f1",
@@ -275,29 +362,44 @@ export const topics: Topic[] = [
     ],
     quiz: [
       {
-        question: "When did the first powered flight in Britain take place?",
-        options: ["1908", "1808", "1939", "1969"],
-        correctIndex: 0,
+        question: "What began in 1919?",
+        options: [
+          "World War II",
+          "Supersonic travel",
+          "Commercial flights",
+          "Imperial Airways",
+        ],
+        correctIndex: 2,
       },
       {
-        question: "By WWI, Britain had over how many military aircraft?",
-        options: ["2,000", "20", "200", "20,000"],
-        correctIndex: 0,
+        question: "What was Imperial Airways?",
+        options: [
+          "A war aircraft",
+          "A modern airline",
+          "A British airline company",
+          "A supersonic plane",
+        ],
+        correctIndex: 2,
       },
       {
-        question: "What airport opened in 1946?",
-        options: ["Heathrow Airport", "Gatwick Airport", "Manchester Airport", "Luton Airport"],
-        correctIndex: 0,
+        question: "What happened to aircraft during World War II?",
+        options: [
+          "They became slower",
+          "They disappeared",
+          "They became faster and stronger",
+          "They stopped flying",
+        ],
+        correctIndex: 2,
       },
       {
-        question: "How long did the first flight last?",
-        options: ["27 seconds", "27 minutes", "2 hours", "5 seconds"],
-        correctIndex: 0,
-      },
-      {
-        question: "What speed milestone is associated with Concorde?",
-        options: ["Mach 2", "10 mph", "Mach 5", "500 mph exactly"],
-        correctIndex: 0,
+        question: "What was special about Concorde?",
+        options: [
+          "It was the first airplane",
+          "It carried mail",
+          "It was faster than sound",
+          "It was used in war",
+        ],
+        correctIndex: 2,
       },
     ],
   },
@@ -308,7 +410,9 @@ export const topics: Topic[] = [
     era: "Modern",
     videoTitle: "Nowadays Transportation",
     description:
-      "The first powered flight in Britain took place in 1908. By WWI, Britain had over 2,000 military aircraft. Heathrow Airport, opened in 1946, would become the world's busiest international airport.",
+      "Road transport is the most commonly used in Britain today. People use cars and buses for daily travel and commuting. It allows flexible and door-to-door movement. However, traffic and pollution are still major challenges.",
+    summary:
+      "This video shows the main type of transport used in Britain today, focusing on road transportation. It explains how cars, buses, and other vehicles are widely used for daily travel across cities and towns. It also shows how road transport is convenient, flexible, and accessible for most people. Today, road transport includes modern vehicles, improved road systems, and advanced technology that help millions of people travel every day.",
     embedUrl: "https://www.youtube.com/embed/FvuyHh4ua9w",
     emoji: "🚀",
     color: "#63d7f1ff",
@@ -320,29 +424,54 @@ export const topics: Topic[] = [
     ],
     quiz: [
       {
-        question: "When did the first powered flight in Britain take place?",
-        options: ["1908", "1808", "1939", "1969"],
-        correctIndex: 0,
+        question: "Which transport is used the most in the UK?",
+        options: [
+          "Air transport",
+          "Rail transport",
+          "Road transport",
+          "Water transport"
+        ],
+        correctIndex: 2,
       },
       {
-        question: "By WWI, Britain had over how many military aircraft?",
-        options: ["2,000", "20", "200", "20,000"],
-        correctIndex: 0,
+        question: "Which airport is the largest in the United Kingdom?",
+        options: [
+          "Gatwick Airport",
+          "Heathrow Airport",
+          "Manchester Airport",
+          "Luton Airport"
+        ],
+        correctIndex: 1,
       },
       {
-        question: "What airport opened in 1946?",
-        options: ["Heathrow Airport", "Gatwick Airport", "Manchester Airport", "Luton Airport"],
-        correctIndex: 0,
+        question: "Which railway system is the oldest in the world?",
+        options: [
+          "Germany",
+          "France",
+          "United Kingdom",
+          "Japan"
+        ],
+        correctIndex: 2,
       },
       {
-        question: "How long did the first flight last?",
-        options: ["27 seconds", "27 minutes", "2 hours", "5 seconds"],
-        correctIndex: 0,
+        question: "About how much freight enters the UK by sea?",
+        options: [
+          "40%",
+          "60%",
+          "75%",
+          "95%"
+        ],
+        correctIndex: 3,
       },
       {
-        question: "What speed milestone is associated with Concorde?",
-        options: ["Mach 2", "10 mph", "Mach 5", "500 mph exactly"],
-        correctIndex: 0,
+        question: "On which side of the road do people drive in the UK?",
+        options: [
+          "Right side",
+          "Left side",
+          "Both sides",
+          "Middle"
+        ],
+        correctIndex: 1,
       },
     ],
   },
@@ -354,5 +483,3 @@ export const eraColors: Record<Era, { dot: string; label: string }> = {
   Victorian: { dot: "#8b5cf6", label: "text-violet-600" },
   Modern: { dot: "#10b981", label: "text-emerald-600" },
 };
-
-export const tabs = ["video", "facts"] as const;

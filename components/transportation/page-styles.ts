@@ -43,7 +43,6 @@ export const pageStyles = `
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    height: 100%;
   }
 
   .card:hover {
@@ -70,7 +69,6 @@ export const pageStyles = `
     display: flex;
     flex-direction: column;
     gap: 10px;
-    height: 100%;
   }
 
   .detail-card {

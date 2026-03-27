@@ -2,21 +2,18 @@ import { type MouseEvent, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { X } from "lucide-react";
 
-import { tabs } from "./data";
-import type { ActiveTab, Topic } from "./types";
+import type { Topic } from "./types";
 
 type TopicModalProps = {
-  activeTab: ActiveTab;
   onClose: () => void;
-  onTabChange: (tab: ActiveTab) => void;
   topic: Topic | null;
 };
 
-type FactsPanelProps = {
+type ExercisePanelProps = {
   topic: Topic;
 };
 
-function FactsPanel({ topic }: FactsPanelProps) {
+function ExercisePanel({ topic }: ExercisePanelProps) {
   const [showQuiz, setShowQuiz] = useState(false);
   const [answers, setAnswers] = useState<number[]>([]);
 
@@ -26,65 +23,6 @@ function FactsPanel({ topic }: FactsPanelProps) {
       animate={{ opacity: 1, y: 0 }}
       style={{ padding: "8px 0" }}
     >
-      <p
-        style={{
-          fontFamily: "'DM Sans', sans-serif",
-          fontSize: 15,
-          color: "rgba(255,255,255,0.65)",
-          lineHeight: 1.7,
-          marginBottom: 24,
-        }}
-      >
-        {topic.description}
-      </p>
-      <h4
-        style={{
-          fontFamily: "'DM Sans', sans-serif",
-          fontSize: 11,
-          fontWeight: 700,
-          letterSpacing: "0.1em",
-          textTransform: "uppercase",
-          color: "rgba(255,255,255,0.35)",
-          marginBottom: 14,
-        }}
-      >
-        Quick Facts
-      </h4>
-      <div>
-        {topic.facts.map((fact, index) => (
-          <motion.div
-            key={fact}
-            initial={{ opacity: 0, x: -10 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: index * 0.1 }}
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: 14,
-              padding: "14px 16px",
-              background: "rgba(255,255,255,0.04)",
-              border: "1px solid rgba(255,255,255,0.07)",
-              borderRadius: 14,
-              marginBottom: 10,
-              fontFamily: "'DM Sans', sans-serif",
-              fontSize: 15,
-              color: "rgba(255,255,255,0.8)",
-            }}
-          >
-            <div
-              style={{
-                width: 8,
-                height: 8,
-                borderRadius: "50%",
-                background: topic.color,
-                flexShrink: 0,
-              }}
-            />
-            {fact}
-          </motion.div>
-        ))}
-      </div>
-
       <div style={{ marginTop: 24 }}>
         <button
           type="button"
@@ -235,9 +173,7 @@ function FactsPanel({ topic }: FactsPanelProps) {
 }
 
 export function TopicModal({
-  activeTab,
   onClose,
-  onTabChange,
   topic,
 }: TopicModalProps) {
   return (
@@ -308,59 +244,37 @@ export function TopicModal({
               </div>
             </div>
 
-            <div className="tab-bar">
-              {tabs.map((tab) => (
-                <button
-                  key={tab}
-                  className={`tab ${activeTab === tab ? "active" : ""}`}
-                  onClick={() => onTabChange(tab)}
-                  style={
-                    activeTab === tab
-                      ? { color: topic.color, background: `${topic.bg}15` }
-                      : {}
-                  }
-                >
-                  {tab === "video" ? "📺 Video" : "⚡ Key Facts"}
-                </button>
-              ))}
-            </div>
-
             <div className="modal-body">
-              {activeTab === "video" ? (
-                <>
-                  <p
-                    style={{
-                      fontFamily: "'DM Sans', sans-serif",
-                      fontSize: 15,
-                      color: "rgba(255,255,255,0.65)",
-                      lineHeight: 1.7,
-                      marginBottom: 20,
-                    }}
-                  >
-                    {topic.description}
-                  </p>
-                  <div
-                    style={{
-                      borderRadius: 18,
-                      overflow: "hidden",
-                      background: "#000",
-                      border: `1px solid ${topic.color}30`,
-                    }}
-                  >
-                    <div style={{ aspectRatio: "16/9", width: "100%" }}>
-                      <iframe
-                        style={{ width: "100%", height: "100%", display: "block" }}
-                        src={topic.embedUrl}
-                        title={topic.videoTitle}
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                      />
-                    </div>
-                  </div>
-                </>
-              ) : (
-                <FactsPanel key={topic.id} topic={topic} />
-              )}
+              <p
+                style={{
+                  fontFamily: "'DM Sans', sans-serif",
+                  fontSize: 15,
+                  color: "rgba(255,255,255,0.65)",
+                  lineHeight: 1.7,
+                  marginBottom: 20,
+                }}
+              >
+                {topic.description}
+              </p>
+              <div
+                style={{
+                  borderRadius: 18,
+                  overflow: "hidden",
+                  background: "#000",
+                  border: `1px solid ${topic.color}30`,
+                }}
+              >
+                <div style={{ aspectRatio: "16/9", width: "100%" }}>
+                  <iframe
+                    style={{ width: "100%", height: "100%", display: "block" }}
+                    src={topic.embedUrl}
+                    title={topic.videoTitle}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+              </div>
+              <ExercisePanel key={topic.id} topic={topic} />
             </div>
           </motion.div>
         </motion.div>

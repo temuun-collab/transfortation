@@ -7,6 +7,7 @@ export type Topic = {
   era: Era;
   videoTitle: string;
   description: string;
+  summary: string;
   embedUrl: string;
   emoji: string;
   color: string;
@@ -14,8 +15,6 @@ export type Topic = {
   facts: string[];
   quiz: QuizQuestion[];
 };
-
-export type ActiveTab = "video" | "facts";
 
 export type QuizQuestion = {
   question: string;
