@@ -11,7 +11,7 @@ export const topics: Topic[] = [
       "Sea transport played a key role in Britain’s global trade and empire. Large ships were used to carry goods between continents. Navigation technology improved sea travel over time. Today, cargo ships transport most of the world’s goods.",
     summary:
       "This video shows the development of maritime transport from early boats to modern ships. It explains how ancient people used simple wooden boats for fishing and travel across rivers and seas. It also shows how ships became larger and more powerful during the Industrial Revolution with steam engines. Today, modern ships use advanced technology and are important for global trade and long-distance travel.",
-    embedUrl: "https://www.youtube.com/embed/vH4qQbgLYtU",
+    embedUrl: "https://www.youtube.com/embed/Qq0NNd5Ng6I",
     emoji: "⛵",
     color: "#0ea5e9",
     bg: "#e0f2fe",
@@ -73,7 +73,7 @@ export const topics: Topic[] = [
       "Wheeled carts were one of the earliest transport inventions in human history. They were mainly used in agriculture and trade. Animals like horses and oxen were used to pull them. This invention helped people move goods more easily over long distances.",
     summary:
       "This video shows the development of wheeled carts from ancient times to more advanced transport tools. It explains how early carts were made from wood and pulled by animals such as horses for carrying goods and people. It also shows how the invention of the wheel improved transportation and trade. Today, wheeled carts are still used in some areas, showing the importance of early transportation inventions.",
-    embedUrl: "https://www.youtube.com/embed/9geT2x3CCuw",
+    embedUrl: "https://www.youtube.com/embed/WoIsFRT0kAQ",
     emoji: "🛞",
     color: "#f59e0b",
     bg: "#fef9c3",
@@ -145,7 +145,7 @@ export const topics: Topic[] = [
       "Railways helped transport heavy goods during the Industrial Revolution. Steam engines were later replaced by diesel and electric trains. High-speed trains made long-distance travel faster and more comfortable. Today, rail systems are important for both urban and national transport.",
     summary:
       "This video shows the development of the railroad from early wagonways to modern train systems. It explains how the first railways were built in the 19th century using steam locomotives for transporting goods and passengers. It also shows how trains became faster and more efficient with the introduction of electric and high-speed rail. Today, railroads are an important part of transportation, helping millions of people travel quickly and safely.",
-    embedUrl: "https://www.youtube.com/embed/XYJStb0RRkE",
+    embedUrl: "https://www.youtube.com/embed/a_Ea8-g04A0",
     emoji: "🚂",
     color: "#ef4444",
     bg: "#fee2e2",
@@ -217,7 +217,7 @@ export const topics: Topic[] = [
       "The underground system was built to reduce traffic in crowded cities. It became a fast way to travel without using roads. Different lines connect many parts of the city. Today, it is one of the most efficient urban transport systems.",
     summary:
       "This video shows the development of the London Underground from its early beginnings to the modern system. It explains how the first underground railway opened in 1863 using steam trains, later changing to electric trains. It also shows how the network expanded across London and became one of the busiest transport systems in the world. Today, it includes modern trains, advanced technology, and many lines that help millions of people travel every day.",
-    embedUrl: "https://www.youtube.com/embed/XgpnUdc0n9c",
+    embedUrl: "https://www.youtube.com/embed/9cY0Sa6PL8o",
     emoji: "🚇",
     color: "#8b5cf6",
     bg: "#ede9fe",
@@ -279,7 +279,7 @@ export const topics: Topic[] = [
       "Cars became popular in the 20th century and changed daily life and cities. Early cars used petrol engines, but today many use electric power. Roads and highways were built to support growing traffic. Now, smart technology and self-driving systems are being developed.",
     summary:
       "This video shows the development of the automobile from its early invention to modern cars. It explains how the first motor vehicles were created in the late 19th century, starting with simple engines and basic designs. It also shows how cars became faster, safer, and more comfortable over time. Today, automobiles include electric vehicles, advanced technology, and modern features that help people travel easily every day.",
-    embedUrl: "https://www.youtube.com/embed/2JCGx6xGaQQ",
+    embedUrl: "https://www.youtube.com/embed/j8_zB-T7Tt4",
     emoji: "🚗",
     color: "#10b981",
     bg: "#d1fae5",
@@ -351,7 +351,7 @@ export const topics: Topic[] = [
       "Airplanes made international travel much faster than before. Airlines began offering regular passenger services in the 20th century. Airports became important transport hubs. Today, air travel connects countries and supports global tourism.",
     summary:
       "This video shows the development of airplanes from the first flights to modern aviation. It explains how the first successful flight happened in the early 20th century, followed by the introduction of commercial flights. It also shows how airplanes became faster and more advanced, including the Concorde and modern jets. Today, airplanes use advanced technology and connect people around the world quickly and efficiently.",
-    embedUrl: "https://www.youtube.com/embed/OFJbGjKl5Xg",
+    embedUrl: "https://www.youtube.com/embed/nXb_H0Rr8aY",
     emoji: "✈️",
     color: "#6366f1",
     bg: "#e0e7ff",
@@ -413,7 +413,7 @@ export const topics: Topic[] = [
       "Road transport is the most commonly used in Britain today. People use cars and buses for daily travel and commuting. It allows flexible and door-to-door movement. However, traffic and pollution are still major challenges.",
     summary:
       "This video shows the main type of transport used in Britain today, focusing on road transportation. It explains how cars, buses, and other vehicles are widely used for daily travel across cities and towns. It also shows how road transport is convenient, flexible, and accessible for most people. Today, road transport includes modern vehicles, improved road systems, and advanced technology that help millions of people travel every day.",
-    embedUrl: "https://www.youtube.com/embed/FvuyHh4ua9w",
+    embedUrl: "https://www.youtube.com/embed/jzo2ciBldE0",
     emoji: "🚀",
     color: "#63d7f1ff",
     bg: "#e0e7ff",

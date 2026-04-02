@@ -28,9 +28,10 @@ export function TimelineSection({
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.4 }}
+      className="timeline-shell"
       style={{
         minHeight: "100vh",
-        padding: "32px 56px 48px",
+        padding: "clamp(20px, 4vw, 32px) clamp(16px, 5vw, 56px) 48px",
         backgroundImage:
           "linear-gradient(rgba(15,15,19,0.88), rgba(15,15,19,0.92)), url('/explore.jpg')",
         backgroundPosition: "center",
@@ -39,7 +40,7 @@ export function TimelineSection({
       }}
     >
       <div style={{ maxWidth: 1680, margin: "0 auto" }}>
-        <div style={{ textAlign: "center", marginBottom: 36 }}>
+        <div className="timeline-heading" style={{ textAlign: "center", marginBottom: 36 }}>
           <div
             style={{
               display: "inline-flex",
@@ -108,14 +109,7 @@ export function TimelineSection({
           </div>
         </div>
 
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: `repeat(${topics.length}, minmax(0, 1fr))`,
-            gap: 16,
-            alignItems: "start",
-          }}
-        >
+        <div className="timeline-grid">
           {topics.map((topic, index) => (
             <motion.div
               key={topic.id}
@@ -133,6 +127,7 @@ export function TimelineSection({
                 <div className="card-accent" style={{ background: topic.color }} />
 
                 <div
+                  className="card-head"
                   style={{
                     display: "flex",
                     alignItems: "center",

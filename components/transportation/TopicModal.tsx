@@ -204,6 +204,7 @@ export function TopicModal({
 
             <div className="modal-header">
               <div
+                className="modal-header-row"
                 style={{
                   display: "flex",
                   alignItems: "flex-start",
@@ -211,7 +212,7 @@ export function TopicModal({
                   gap: 16,
                 }}
               >
-                <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
+                <div className="modal-topic-intro" style={{ display: "flex", alignItems: "center", gap: 14 }}>
                   <div
                     className="emoji-box"
                     style={{

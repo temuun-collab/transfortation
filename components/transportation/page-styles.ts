@@ -69,6 +69,7 @@ export const pageStyles = `
     display: flex;
     flex-direction: column;
     gap: 10px;
+    min-width: 0;
   }
 
   .detail-card {
@@ -225,5 +226,119 @@ export const pageStyles = `
     font-weight: 600;
     letter-spacing: 0.12em;
     text-transform: uppercase;
+  }
+
+  .timeline-grid {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    gap: 16px;
+    align-items: start;
+  }
+
+  @media (max-width: 1400px) {
+    .timeline-grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .timeline-shell {
+      min-height: auto;
+    }
+
+    .timeline-heading {
+      margin-bottom: 28px !important;
+    }
+
+    .timeline-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .card {
+      padding: 18px;
+    }
+
+    .detail-card {
+      min-height: 0;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .timeline-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .card {
+      padding: 16px;
+      border-radius: 18px;
+    }
+
+    .card-head {
+      align-items: flex-start !important;
+    }
+
+    .detail-card {
+      padding: 14px;
+      border-radius: 14px;
+    }
+
+    .modal-overlay {
+      padding: 12px;
+      align-items: flex-end;
+    }
+
+    .modal-box {
+      max-height: min(88vh, 920px);
+      border-radius: 24px 24px 0 0;
+    }
+
+    .modal-header {
+      padding: 20px 18px 0;
+    }
+
+    .modal-body {
+      padding: 16px 18px 20px;
+    }
+
+    .modal-header-row {
+      align-items: flex-start !important;
+      gap: 12px !important;
+    }
+
+    .modal-topic-intro {
+      min-width: 0;
+      gap: 12px !important;
+    }
+  }
+
+  @media (max-width: 560px) {
+    .timeline-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .card {
+      padding: 14px;
+    }
+
+    .emoji-box {
+      width: 40px;
+      height: 40px;
+      font-size: 20px;
+    }
+
+    .play-btn {
+      padding: 9px 10px;
+      font-size: 12px;
+    }
+
+    .modal-header-row {
+      flex-direction: column;
+    }
+
+    .close-btn {
+      align-self: flex-end;
+    }
   }
 `;
